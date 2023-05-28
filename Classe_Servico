@@ -1,2 +1,41 @@
 
-bote seu cod aqui
+
+public class Servico {
+    private int id;
+    private String nome;
+    private double valor;
+    private List<String> listaProdutos;
+
+   
+     public Servico(int id, String nome, double valor, List<String> listaProdutos) {
+        this.id = id;
+        this.nome = nome;
+        this.valor = valor;
+        this.listaProdutos = listaProdutos;
+    }
+         
+         public int getId() {
+        return  this.id;
+    }
+
+    public String getNome() {
+        return this. nome;
+    }
+
+    public double getValor() {
+        return this. valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public List<String> getListaProdutos() {
+        return  this.listaProdutos;
+    }
+
+    public void setListaProdutos(List<String> listaProdutos) {
+        this.listaProdutos = listaProdutos;
+=======
+
+//Raquel
