@@ -1,1 +1,52 @@
+public class cliente {
+  private int id;
+  private String nome;
+  private int idade;
+  private int telefone;
+  private String email;
+  private int data_de_Nascimento;
+  private boolean envio de cupom;
 
+
+public cliente ( string id, String nome, String idade, String telefone, String email, String data_de_Nascimento) {
+       
+   this.id= id;       
+   this.idade = nome;
+   this.nome = idade;
+   this.telefone= telefone;
+   this.email= email;
+   this.data_de_Nascimento= data_de_nascimento ;
+
+}
+ 
+ public int getId() {
+   return id;
+ }
+
+  public String getNome() {
+    return nome;
+ }
+
+  public String getTelefone() {
+     return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEmail() {
+      return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getData_de_Nascimento() {
+        return Data_de_Nascimento;
+    }
+
+    public boolean isMetodoEnvioCupom() {
+        return metodoEnvioCupom;
+    }
