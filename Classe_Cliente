@@ -1,1 +1,62 @@
+//Raquel
+=======
+//criando classe cliente
+public class Cliente {
+	
+	
+	private int id;
+	private String nome;
+	private int idade;
+	private String telefone;
+	private String email;
+	private String data_de_Nascimento;
+		  
+
+//criando construtor da classe
+	public void cliente ( int id, String nome, int idade, String telefone, String email, String data_de_Nascimento) {
+
+		this.id= id;       
+		this.nome = nome;
+		this.idade = idade;
+		this.telefone= telefone;
+		this.email= email;
+		this.data_de_Nascimento= data_de_Nascimento ;
+
+	}
+// criando get e set 
+	public int getId() {
+		return id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getData_de_Nascimento() {
+		return data_de_Nascimento;
+	}
+		  
+//fazendo metodo para envio de cupom
+	public boolean isMetodoEnvioCupom() {
+		return true;
+    }
+}
+
+
 

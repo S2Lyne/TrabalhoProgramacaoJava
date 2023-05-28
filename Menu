@@ -1,0 +1,143 @@
+import java.util.Scanner;
+
+public class MenuCadastro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcao = -1;
+
+        while (opcao != 0) {
+            System.out.println("MENU PRINCIPAL");
+            System.out.println("Selecione uma opção:");
+            System.out.println("1 - Cadastrar");
+            System.out.println("2 - Atualizar");
+            System.out.println("3 - Deletar");
+            System.out.println("4 - Atendimento");
+            System.out.println("0 - SAIR");
+
+            opcao = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    cadastrarMenu(scanner);  // Chama o método para exibir o menu de cadastro
+                    break;
+                case 2:
+                    atualizarMenu(scanner);  // Chama o método para exibir o menu de atualização
+                    break;
+                case 3:
+                    deletarMenu(scanner);  // Chama o método para exibir o menu de exclusão
+                    break;
+                case 4:
+                    atendimento();  // Chama o método para o atendimento
+                    break;
+                case 0:
+                    System.out.println("Saindo...");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+
+        scanner.close();
+    }
+
+    public static void cadastrarMenu(Scanner scanner) {
+        int opcao = -1;
+
+        while (opcao != 0) {
+            System.out.println("CADASTRAR");
+            System.out.println("Selecione uma opção:");
+            System.out.println("1 - Cliente");
+            System.out.println("2 - Funcionário");
+            System.out.println("3 - Serviço");
+            System.out.println("0 - Voltar ao menu anterior");
+
+            opcao = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    cadastrarCliente();  // Chama o método para cadastrar um cliente
+                    break;
+                case 2:
+                    cadastrarFuncionario();  // Chama o método para cadastrar um funcionário
+                    break;
+                case 3:
+                    cadastrarServico();  // Chama o método para cadastrar um serviço
+                    break;
+                case 0:
+                    System.out.println("Voltando ao menu anterior...");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+    }
+
+    public static void atualizarMenu(Scanner scanner) {
+        int opcao = -1;
+
+        while (opcao != 0) {
+            System.out.println("ATUALIZAR");
+            System.out.println("Selecione uma opção:");
+            System.out.println("1 - Cliente");
+            System.out.println("2 - Funcionário");
+            System.out.println("3 - Serviço");
+            System.out.println("0 - Voltar ao menu anterior");
+
+            opcao = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    atualizarCliente();  // Chama o método para atualizar um cliente
+                    break;
+                case 2:
+                    atualizarFuncionario();  // Chama o método para atualizar um funcionário
+                    break;
+                case 3:
+                    atualizarServico();  // Chama o método para atualizar um serviço
+                    break;
+                case 0:
+                    System.out.println("Voltando ao menu anterior...");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+    }
+
+    public static void deletarMenu(Scanner scanner) {
+        int opcao = -1;
+
+        while (opcao != 0) {
+            System.out.println("DELETAR");
+            System.out.println("Selecione uma opção:");
+            System.out.println("1 - Cliente");
+            System.out.println("2 - Funcionário");
+            System.out.println("3 - Serviço");
+            System.out.println("0 - Voltar ao menu anterior");
+
+            opcao = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    deletarCliente();  // Chama o método para deletar um cliente
+                    break;
+                case 2:
+                    deletarFuncionario();  // Chama o método para deletar um funcionário
+                    break;
+                case 3:
+                    deletarServico();  // Chama o método para deletar um serviço
+                    break;
+                case 0:
+                    System.out.println("Voltando ao menu anterior...");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+    }
+
+   

@@ -1,0 +1,87 @@
+//Criando a classe
+public class Funcionario {
+	private int id;
+	private String nomeFuncionario;
+	private String dataNascimento;
+	private String endereco;
+	private double telefone;
+	private double email;
+	private double valorServico;
+	
+//Criando  o construtor
+public Funcionario(int id, String nomeFuncionario, String dataNascimento, String endereco, double telefone, double email) {
+
+	this.id = id;
+	this.nomeFuncionario = nomeFuncionario;
+	this.dataNascimento = dataNascimento;
+	this.endereco = endereco;
+	this.telefone = telefone;
+	this.email = email;
+    }
+//Criando método get
+	public int getId() {
+		return id;
+	}
+// Criando o salario
+	public double calculaSalario(double comissao) {
+		double valorServico = comissao * 0.3;
+		return valorServico;
+	}	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNomeFuncionario() {
+		return nomeFuncionario;
+	}
+	public void setNomeFuncionario(String nomeFuncionario) {
+		this.nomeFuncionario = nomeFuncionario;
+	}
+
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public double getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(double telefone) {
+		this.telefone = telefone;
+	}
+
+	public double getEmail() {
+		return getEmail();
+	}
+
+	public void setEmail(double email) {
+		this.email = email;
+	}
+// Reproduzindo Funcionario
+	//public static void main(String[] args) {	  
+
+   // Funcionario funcionario1 = new Funcionario(1,""):
+   // Funcionario funcionario2 = new Funcionario(2,""):
+   // Funcionario funcionario3 = new Funcionario(3,""):
+   // Funcionario funcionario4 = new Funcionario(4,""):
+   // Funcionario funcionario5 = new Funcionario(5,""):
+   // Funcionario funcionario6 = new Funcionario(6,""):
+   // Funcionario funcionario7 = new Funcionario(7,""):
+	// System.out.println("Salário do funcionário 1: R$" + salarioFuncionario1);
+   
+//  }
+
+
+}
