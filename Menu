@@ -1,5 +1,7 @@
 import.java.util.Scanner;
 
+        // Implemente a lógica para cadastrar um cliente
+
 public class MenuCadastro {
 public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -89,13 +91,13 @@ public static void main(String[] args) {
 
             switch (opcao) {
                 case 1:
-                    atualizarCliente();
+                    atualizarCliente(); // Chama o método para atualizar um cliente
                     break;
                 case 2:
-                    atualizarFuncionario();
+                    atualizarFuncionario(); // Chama o método para atualizar um funcionário
                     break;
                 case 3:
-                    atualizarServico();
+                    atualizarServico(); // Chama o método para atualizar um serviço
                     break;
                 case 0:
                     System.out.println("Voltando ao menu anterior...");
