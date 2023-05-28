@@ -1,1 +1,97 @@
 
+//Criando a classe
+public class Funcionario {
+	private int id;
+	private String nomeFuncionario;
+	private String dataNascimento;
+	private String endereco;
+    private double telefone;
+    private double email;
+    
+    
+   //Criando  o construtor
+   
+    public Funcionario(int id, String nomeFuncionario, String dataNascimento, String endereco, double telefone, double email) {
+        this.id = id;
+        this.nomeFuncionario = nomeFuncionario;
+        this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
+    }
+
+        
+    //Criando método get
+      
+    	public int getId() {
+		return id;
+	}
+ // Calculando o salario
+    double valorServico = 1000.0;
+    double salarioFuncionario1 = funcionario1.calcularSalario(valorServico);
+    System.out.println("Salário do funcionário 1: R$" + salarioFuncionario1);
+    	public void setId(int id) {
+		this.id = id;
+	}
+
+    	public String getNomeFuncionario() {
+		return nomeFuncionario;
+	}
+
+    	public void setNomeFuncionario(String nomeFuncionario) {
+		this.nomeFuncionario = nomeFuncionario;
+	}
+
+    	public double getDataNascimento() {
+		return dataNascimento;
+	}
+
+    	public void setDataNascimento(double dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+    	public String getEndereco() {
+		return endereco;
+	}
+
+    	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+    	public double getTelefone() {
+		return telefone;
+	}
+
+    	public void setTelefone(double telefone) {
+		this.telefone = telefone;
+	}
+
+    	public double getEmail() {
+		return getEmail();
+	}
+
+    	public void setEmail(double email) {
+		this.email = email;
+	}
+
+
+        //Criando o calculo do salario
+    	public double calcularSalario(double valorServico) {
+    		double salario = valorServico - (valorServico * 0.3);
+    		return salario;
+    	}
+
+		// Reproduzindo Funcionario
+	//	public static void main(String[] args) {
+  
+   // Funcionario funcionario1 = new Funcionario(1,""):
+   // Funcionario funcionario2 = new Funcionario(2,""):
+   // Funcionario funcionario3 = new Funcionario(3,""):
+   // Funcionario funcionario4 = new Funcionario(4,""):
+   // Funcionario funcionario5 = new Funcionario(5,""):
+   // Funcionario funcionario6 = new Funcionario(6,""):
+   // Funcionario funcionario7 = new Funcionario(7,""):
+
+   
+//  }
+}
