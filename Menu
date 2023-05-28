@@ -1,7 +1,7 @@
-import.java.util.Scanner;
+import java.util.Scanner;
 
 public class MenuCadastro {
-public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcao = -1;
 
@@ -18,16 +18,16 @@ public static void main(String[] args) {
 
             switch (opcao) {
                 case 1:
-                    cadastrarMenu(scanner);
+                    cadastrarMenu(scanner);  // Chama o método para exibir o menu de cadastro
                     break;
                 case 2:
-                    atualizarMenu(scanner);
+                    atualizarMenu(scanner);  // Chama o método para exibir o menu de atualização
                     break;
                 case 3:
-                    deletarMenu(scanner);
+                    deletarMenu(scanner);  // Chama o método para exibir o menu de exclusão
                     break;
                 case 4:
-                    atendimento();
+                    atendimento();  // Chama o método para o atendimento
                     break;
                 case 0:
                     System.out.println("Saindo...");
@@ -56,13 +56,13 @@ public static void main(String[] args) {
 
             switch (opcao) {
                 case 1:
-                    cadastrarCliente();
+                    cadastrarCliente();  // Chama o método para cadastrar um cliente
                     break;
                 case 2:
-                    cadastrarFuncionario();
+                    cadastrarFuncionario();  // Chama o método para cadastrar um funcionário
                     break;
                 case 3:
-                    cadastrarServico();
+                    cadastrarServico();  // Chama o método para cadastrar um serviço
                     break;
                 case 0:
                     System.out.println("Voltando ao menu anterior...");
@@ -89,13 +89,13 @@ public static void main(String[] args) {
 
             switch (opcao) {
                 case 1:
-                    atualizarCliente();
+                    atualizarCliente();  // Chama o método para atualizar um cliente
                     break;
                 case 2:
-                    atualizarFuncionario();
+                    atualizarFuncionario();  // Chama o método para atualizar um funcionário
                     break;
                 case 3:
-                    atualizarServico();
+                    atualizarServico();  // Chama o método para atualizar um serviço
                     break;
                 case 0:
                     System.out.println("Voltando ao menu anterior...");
@@ -121,3 +121,23 @@ public static void main(String[] args) {
             opcao = scanner.nextInt();
 
             switch (opcao) {
+                case 1:
+                    deletarCliente();  // Chama o método para deletar um cliente
+                    break;
+                case 2:
+                    deletarFuncionario();  // Chama o método para deletar um funcionário
+                    break;
+                case 3:
+                    deletarServico();  // Chama o método para deletar um serviço
+                    break;
+                case 0:
+                    System.out.println("Voltando ao menu anterior...");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+    }
+
+   
