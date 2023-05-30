@@ -11,8 +11,14 @@ public class Global {
 		Scanner scanner = new Scanner(System.in);
 		int opcao = op;
 		while (opcao != 0) {
-
-	        switch (opcao) {
+			
+			if(opcao == 0) {
+				
+				System.out.println("Saindo...");
+				System.exit(0);
+				
+			}else {
+				switch (opcao) {
 	        	case 1:
 	        		cadastrarMenu(opcao);  // Chama o método para exibir o menu de cadastro
 	                break;
@@ -47,8 +53,12 @@ public class Global {
 	        System.out.println("**************** 0 - SAIR ********************** ");
 	        
 	        opcao = scanner.nextInt();
+				
+			}
+
+	        
 	     }
-		scanner.close();
+		
 	}
 
 	 //metódo que chama o menu de cadastrar
@@ -95,9 +105,15 @@ public class Global {
 	        System.out.println("**************** 0 - SAIR ********************** ");
 	        
 	        opcao = scanner.nextInt();
-	        menu(opcao);
+	        
+	        if(opcao == 0) {
+				System.out.println("Saindo...");
+				System.exit(0);
+			}else {
+				menu(opcao);
+			}
         }
-        scanner.close();
+        
     }
 
     //metódo que chama o menu de update
@@ -145,9 +161,15 @@ public class Global {
 	        System.out.println("**************** 0 - SAIR ********************** ");
 	        
 	        opcao = scanner.nextInt();
-	        menu(opcao);
+	        
+	        if(opcao == 0) {
+				System.out.println("Saindo...");
+				System.exit(0);
+			}else {
+				menu(opcao);
+			}
         }
-        scanner.close();
+        
     }
 
     //metódo que chama o menu de deletar
@@ -176,11 +198,6 @@ public class Global {
                 case 3:
                     Servico.deletarServico();  // Chama o método para deletar um serviço
                     break;
-                case 4:
-                	opcao = -1;
-                    //System.out.println("Saindo...");
-                    menu(opcao);
-                    break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
                     break;
@@ -199,9 +216,15 @@ public class Global {
 	        System.out.println("**************** 0 - SAIR ********************** ");
 	        
 	        opcao = scanner.nextInt();
-	        menu(opcao);
+	        
+	        if(opcao == 0) {
+				System.out.println("Saindo...");
+				System.exit(0);
+			}else {
+				menu(opcao);
+			}
         }
-        scanner.close();
+     
     }
     
   //metódo que chama o menu de listar
@@ -265,9 +288,15 @@ public class Global {
 	        System.out.println("**************** 0 - SAIR ********************** ");
 	        
 	        opcao = scanner.nextInt();
-	        menu(opcao);
+	        
+	        if(opcao == 0) {
+				System.out.println("Saindo...");
+				System.exit(0);
+			}else {
+				menu(opcao);
+			}
         }
-        scanner.close();
+      
     }
 
 }
