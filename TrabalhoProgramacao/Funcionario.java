@@ -3,26 +3,19 @@ package TrabalhoProgramacao;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Funcionario {
+public class Funcionario extends Pessoa {
 	private int id;
-	private String nomeFuncionario;
-	private String dataNascimento;
 	private String endereco;
-	private String telefone;
-	private String email;
 	private double valorServico;
 	
 	public Global g = new Global();
 	
 	//Criando  o construtor
-	public Funcionario(int id, String nomeFuncionario, String dataNascimento, String endereco, String telefone, String email) {
-
+	public Funcionario(int id, String nome, String dataNascimento, String endereco, String telefone, String email) {
+		super( nome, dataNascimento, telefone, email )
 		this.id = id;
-		this.nomeFuncionario = nomeFuncionario;
-		this.dataNascimento = dataNascimento;
 		this.endereco = endereco;
-		this.telefone = telefone;
-		this.email = email;
+		
     }
 	
 	//Criando  o construtor sem parametro
@@ -34,28 +27,15 @@ public class Funcionario {
 	public int getId() {
 		return id;
 	}
+
 	// Criando o salario
 	public double calculaSalario(double comissao) {
 		double valorServico = comissao * 0.3;
 		return valorServico;
 	}	
+
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getNomeFuncionario() {
-		return nomeFuncionario;
-	}
-	public void setNomeFuncionario(String nomeFuncionario) {
-		this.nomeFuncionario = nomeFuncionario;
-	}
-
-	public String getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
 	}
 
 	public String getEndereco() {
@@ -64,22 +44,6 @@ public class Funcionario {
 
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
-	}
-
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	//metódo que salvar o Funcionario com parametro
@@ -96,7 +60,7 @@ public class Funcionario {
 	    	
 	    }    	
 	    fun.setId(f.getId()); 
-    	fun.setNomeFuncionario(f.getNomeFuncionario()); 
+    	fun.setNome(f.getNome()); 
     	fun.setDataNascimento(f.getDataNascimento());
     	fun.setEndereco(f.getEndereco()); 
     	fun.setTelefone(f.getTelefone());
@@ -156,7 +120,7 @@ public class Funcionario {
     	System.out.println("id: ");
     	f.setId(scanner.nextInt()); 
     	System.out.println("Nome: ");
-    	f.setNomeFuncionario(scanner.next()); 
+    	f.setNome(scanner.next()); 
     	System.out.println("data de nascimento: ");
     	f.setDataNascimento(scanner.next());
     	System.out.println("endereço: ");
@@ -188,7 +152,7 @@ public class Funcionario {
             	System.out.println("id: ");
             	f1.setId(scanner.nextInt());
             	System.out.println("Nome: ");
-            	f1.setNomeFuncionario(scanner.next());
+            	f1.setNome(scanner.next());
             	System.out.println("endereço: ");
             	f1.setEndereco(scanner.next());
             	System.out.println("telefone: ");
@@ -208,8 +172,8 @@ public class Funcionario {
     	System.out.format("%-15s%-15s%-15s%-15s%-15s%-15s\n", " Id ", " Nome ", " Data de Nasc ", " Endereço ", " Telefone ", " E-mail ");
     	for(int i = 0; i < Global.funcionario.size(); i++) {
     		Funcionario f1 = (Funcionario) Global.funcionario.get(i);    
-    		//System.out.println(f1.getId() +"\t"+ f1.getNomeFuncionario()+"\t"+f1.getDataNascimento()+"\t"+ f1.getEndereco()+"\t"+ f1.getTelefone()+"\t"+ f1.getEmail());
-        	System.out.format("%-15s%-15s%-15s%-15s%-15s%-15s\n", f1.getId(), f1.getNomeFuncionario(), f1.getDataNascimento(), f1.getEndereco(), f1.getTelefone(), f1.getEmail());    	
+    		//System.out.println(f1.getId() +"\t"+ f1.getNome()+"\t"+f1.getDataNascimento()+"\t"+ f1.getEndereco()+"\t"+ f1.getTelefone()+"\t"+ f1.getEmail());
+        	System.out.format("%-15s%-15s%-15s%-15s%-15s%-15s\n", f1.getId(), f1.getNome(), f1.getDataNascimento(), f1.getEndereco(), f1.getTelefone(), f1.getEmail());    	
         	
         }
 
