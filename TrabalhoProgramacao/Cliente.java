@@ -3,24 +3,15 @@ package TrabalhoProgramacao;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Cliente {
+public class Cliente extends Pessoa{
 	private int id;
-	private String nome;
 	private int idade;
-	private String telefone;
-	private String email;
-	private String data_de_Nascimento;
-		  
 
 	//criando construtor da classe
-	public Cliente ( int id, String nome, int idade, String telefone, String email, String data_de_Nascimento) {
-
-		this.id= id;       
-		this.nome = nome;
+	public Cliente (int id, String nome, int idade , String dataNascimento, String telefone, String email) {
+                super( nome, dataNascimento, telefone, email )
+		this.id= id;      
 		this.idade = idade;
-		this.telefone= telefone;
-		this.email= email;
-		this.data_de_Nascimento= data_de_Nascimento ;
 
 	}
 	public Cliente() {
@@ -35,20 +26,6 @@ public class Cliente {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-	
-	public void setNome(String nome) {
-		this.nome= nome;
-	}
-	public String getTelefone() {
-		return telefone;
-	}
-	
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
 	
 	public int getIdade() {
 		return idade;
@@ -58,21 +35,6 @@ public class Cliente {
 		this.idade = idade;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getData_de_Nascimento() {
-		return data_de_Nascimento;
-	}
-	
-	public void setDataNasc(String data) {
-		this.data_de_Nascimento = data;
-	}
 		  
 	//fazendo metodo para envio de cupom
 	public boolean isMetodoEnvioCupom() {
@@ -97,7 +59,7 @@ public class Cliente {
     	cli.setIdade(c.getIdade());
     	cli.setTelefone(c.getTelefone());
     	cli.setEmail(c.getEmail());
-    	cli.setDataNasc(c.getData_de_Nascimento());
+    	cli.setDataNascimento(c.getDataNascimento());
     	
     	clien.add(cli);
     	
@@ -157,7 +119,7 @@ public class Cliente {
     	System.out.println("e-mail: ");
     	c.setEmail(scanner.next());
     	System.out.println("data de nascimento: ");
-    	c.setDataNasc(scanner.next());
+    	c.setDataNascimento(scanner.next());
     	
     	saveCliente(c);
     	scanner.close();
@@ -199,7 +161,7 @@ public class Cliente {
     	for(int i = 0; i < Global.cliente.size(); i++) {
     		
         	Cliente c1 = (Cliente) Global.cliente.get(i);
-        	System.out.format("\t "+ c1.getId()+"\t"+ c1.getNome()+"\t"+ c1.getIdade()+"\t"+ c1.getTelefone()+"\t"+ c1.getEmail()+"\t"+ c1.getData_de_Nascimento());
+        	System.out.format("\t "+ c1.getId()+"\t"+ c1.getNome()+"\t"+ c1.getIdade()+"\t"+ c1.getTelefone()+"\t"+ c1.getEmail()+"\t"+ c1.getDataNascimento());
         	System.out.println(" ");
         }
     }
@@ -212,7 +174,7 @@ public class Cliente {
         System.out.format("%-15s%-15s%-15s%-15s%-15s%-15s\n", " Id ", " Nome ", " Idade ", " Telefone ", " E-mail ", " Data de Nasc ");
         for(int i = 0; i < Global.cliente.size(); i++) {
         	Cliente c1 = (Cliente) Global.cliente.get(i);
-        	System.out.format(" %-15s %-15s %-15s %-15s %-15s %-15s \n", c1.getId(), c1.getNome(), c1.getIdade(), c1.getTelefone(), c1.getEmail(), c1.getData_de_Nascimento());
+        	System.out.format(" %-15s %-15s %-15s %-15s %-15s %-15s \n", c1.getId(), c1.getNome(), c1.getIdade(), c1.getTelefone(), c1.getEmail(), c1.getDataNascimento());
         	/*if(c1.getId() == idsc) {
             	cliente.remove(i);
         	}*/
