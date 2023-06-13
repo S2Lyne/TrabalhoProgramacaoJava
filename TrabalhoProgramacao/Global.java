@@ -42,7 +42,7 @@ public class Global {
 	        }
 	        
 	        //chamada de menu inicial
-	        System.out.println("*********** SALÃO DAS DONZELAS DE TI *********** ");
+	        System.out.println("************* SALÃO DAS DONZELAS *************** ");
 	        System.out.println("**************** MENU PRINCIPAL **************** ");
 	        System.out.println("************* Selecione uma opção: ************* ");
 	        System.out.println("**************** 1 - Cadastrar ***************** ");
@@ -94,7 +94,7 @@ public class Global {
 
             System.out.println(" ");
             System.out.println(" ");
-	        System.out.println("*********** SALÃO DAS DONZELAS DE TI *********** ");
+	        System.out.println("************* SALÃO DAS DONZELAS *************** ");
 	        System.out.println("**************** MENU PRINCIPAL **************** ");
 	        System.out.println("************* Selecione uma opção: ************* ");
 	        System.out.println("**************** 1 - Cadastrar ***************** ");
@@ -150,7 +150,7 @@ public class Global {
             System.out.println(" ");
             System.out.println(" ");
           //chamada de menu inicial
-	        System.out.println("*********** SALÃO DAS DONZELAS DE TI *********** ");
+	        System.out.println("************* SALÃO DAS DONZELAS *************** ");
 	        System.out.println("**************** MENU PRINCIPAL **************** ");
 	        System.out.println("************* Selecione uma opção: ************* ");
 	        System.out.println("**************** 1 - Cadastrar ***************** ");
@@ -205,7 +205,7 @@ public class Global {
             System.out.println(" ");
             System.out.println(" ");
           //chamada de menu inicial
-	        System.out.println("*********** SALÃO DAS DONZELAS DE TI *********** ");
+	        System.out.println("************* SALÃO DAS DONZELAS *************** ");
 	        System.out.println("**************** MENU PRINCIPAL **************** ");
 	        System.out.println("************* Selecione uma opção: ************* ");
 	        System.out.println("**************** 1 - Cadastrar ***************** ");
@@ -277,7 +277,7 @@ public class Global {
             System.out.println(" ");
             System.out.println(" ");
           //chamada de menu inicial
-	        System.out.println("*********** SALÃO DAS DONZELAS DE TI *********** ");
+	        System.out.println("************* SALÃO DAS DONZELAS *************** ");
 	        System.out.println("**************** MENU PRINCIPAL **************** ");
 	        System.out.println("************* Selecione uma opção: ************* ");
 	        System.out.println("**************** 1 - Cadastrar ***************** ");
