@@ -15,4 +15,6 @@ Francine Solon;
 Raquel Silva;
 Sarah Chagas;
 
+Nasegunda etapa fizemos uma classe pessoa, do qual funcionário e clientes passaram a herdar de pessoa, foi adicionado validações aos métodos, para não permitir Id's iguais, confirmação na hora de cancelamento e updates.
+
 Atividade Passada pelo professores Thiago e Lucas da UNIFACS.
