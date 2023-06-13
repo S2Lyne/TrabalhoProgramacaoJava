@@ -20,7 +20,7 @@ public class Programa {
 			System.exit(0);
 		}else {
 			//CHAMADA DO MENU INICIAL
-	        System.out.println("*********** SALÃO DAS DONZELAS DE TI *********** ");
+	        System.out.println("************* SALÃO DAS DONZELAS *************** ");
 	        System.out.println("**************** MENU PRINCIPAL **************** ");
 	        System.out.println("************* Selecione uma opção: ************* ");
 	        System.out.println("**************** 1 - Cadastrar ***************** ");
